@@ -66,10 +66,10 @@ void alltopo()
 
 int main()
 {
-    #ifndef ONLINE_JUDGE
-    freopen("input.txt","r",stdin);
-    freopen("output.txt","w",stdout);
-    #endif
+   // #ifndef ONLINE_JUDGE
+   // freopen("input.txt","r",stdin);
+   // freopen("output.txt","w",stdout);
+   // #endif
     n=6;
     for (int i = 0; i < n; i++) 
     {
