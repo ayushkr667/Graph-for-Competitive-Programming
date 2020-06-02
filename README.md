@@ -2,3 +2,5 @@
 
 1. BFS search of a Graph
 2. DFS search of graph
+3. Topological Sort
+4. All topological sort of a given DAG(directed acyclic graph)
