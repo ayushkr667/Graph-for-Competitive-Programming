@@ -9,7 +9,6 @@ using namespace std;
 int V;
 vector<vector<int> > g;
 vector<bool> visited;
-
 void add_edge(int a,int b)
 {
 	g[a].pb(b);
