@@ -1,7 +1,6 @@
 //DFS for CC
 #include <bits/stdc++.h> 
 #define pb push_back 
-
 using namespace std; 
 
 vector<bool> v; 
@@ -46,7 +45,6 @@ void dfs(int u)
 		}
 	} 
 } 
-
 int main() 
 { 
 	int n, e; 
