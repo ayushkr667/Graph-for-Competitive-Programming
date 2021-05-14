@@ -4,7 +4,6 @@
 #define ll long long
 #define pb push_back
 using namespace std;
-
 vector<vector<int> >adj;
 vector<int> indegree;
 int n;
