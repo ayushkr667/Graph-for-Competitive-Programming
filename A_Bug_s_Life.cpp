@@ -1,7 +1,6 @@
 #include<bits/stdc++.h>
 using namespace std;
 #define pb push_back
-
 vector<int> arr[2001];
 int vis[2001];
 int col[2001];
