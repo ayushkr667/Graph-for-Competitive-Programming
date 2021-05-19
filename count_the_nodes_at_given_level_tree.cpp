@@ -14,7 +14,6 @@ void add_edge(int a,int b)
 	g[a].pb(b);
 	g[b].pb(a);
 }
-
 int bfs(int root,int level)
 {
 	//queue for bfs
