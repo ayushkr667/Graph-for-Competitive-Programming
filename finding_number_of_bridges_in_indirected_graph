@@ -1,0 +1,41 @@
+int In[500], vis[500], low[500], timer = 0;
+int ans= 0;
+
+void dfs( vector<vector<int>>& graph, int node, int par)
+{
+    vis[node] = 1;
+    In[node] = timer;
+    low[node] = timer;
+    timer += 1;
+
+    for(int child : graph[node] ){
+        //if it is child
+        if( child == par ) continue;
+
+        //it is back edge
+        if(vis[child] == 1){
+            //minimise the low time
+            low[node] = min(low[node], In[child]);
+        }
+        else{
+            dfs(graph, child, node);
+            //check for bridge
+            if(low[child] > In[node]){
+                ans++;
+            }
+            low[node] = min(low[node], low[child]);
+        }
+    }
+}
+
+int solve(vector<vector<int>>& graph) {
+    memset(In, 0, sizeof(In));
+    memset(low, 0, sizeof(low));
+    memset(vis, 0, sizeof(vis));
+
+    dfs(graph, 0, -1);
+    int bridges = ans;
+    ans = 0;
+    
+    return bridges;
+}
