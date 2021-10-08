@@ -4,6 +4,7 @@ using namespace std;
 vector<int> arr[2001];
 int vis[2001];
 int col[2001];
+
 bool dfs(int node, int c)
 {
     vis[node] = 1;
